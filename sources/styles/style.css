@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+}
+#sudoku-container {
+    width: 100%;
+    float: left;
+}
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 300px;
+    height: 300px;
+    max-width: 500px;
+    max-height: 500px;
+}
+tbody {
+    width: 100%;
+}
+td {
+    border: 1px solid black;
+    text-align: center;
+    font-size: 24px;
+    transition: 0.35s ease-out;
+}
+td:hover {
+    background: #ddd;
+}
+td:nth-child(3), td:nth-child(6), td:nth-child(9) {
+	border-right: 3px solid black;
+}
+td:nth-child(1) {
+	border-left: 3px solid black;
+}
+tr:nth-child(3), tr:nth-child(6), tr:nth-child(9) {
+	border-bottom: 3px solid black;
+}
+tr:nth-child(1) {
+	border-top: 3px solid black;
+}
+.options-container {
+    width: 100%;
+    float: left;
+}
+.navigation-container {
+    width: 90%;
+    max-width: 600px;
+    background-color: rgb(19, 141, 177);
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.options-container .navigation-container .btn-option-menu {
+    width: 100%;
+    float: left;
+    height: inherit;
+}
+div#timer-container {
+    height: inherit;
+    width: 100%;
+    text-align: center;
+    line-height: 2.7;
+    font-size: 22px;
+}
+div#btn-timer, div#btn-new, div#btn-hint, div#btn-clear, div#btn-difficulty {
+    height: inherit;
+    width: 20%;
+    float: left;
+}
+button#btn-new-game, button#btn-hint-game, button#btn-clear-game, button#btn-difficulty-game {
+    width: 100%;
+    height: inherit;
+    background: transparent;
+    border: 1px solid transparent;
+    text-align: center;
+    font-size: 18px;
+    outline: none;
+}
+button#btn-new-game:hover, button#btn-hint-game:hover, button#btn-clear-game:hover, button#btn-difficulty-game:hover {
+    background: linear-gradient(0deg, #0c5373, rgba(255, 235, 59, 0));
+    cursor: pointer;
+    border: 0px solid transparent;
+    border-radius: 4px;
+}
+.dropbtn {
+    width: 100%;
+    height: inherit;
+    background: transparent;
+    border: 1px solid transparent;
+    text-align: center;
+    font-size: 18px;
+    outline: none;
+}
+.dropbtn:hover {
+    background: linear-gradient(0deg, #0c5373, rgba(255, 235, 59, 0));
+    cursor: pointer;
+    border: 0px solid transparent;
+    border-radius: 4px;
+}
+.dropdown {
+    width: 100%;
+    float: left;
+    height: inherit;
+    overflow: hidden;
+}
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: rgb(61, 165, 195);
+    width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+.dropdown-content a:hover {
+    background: linear-gradient(0deg, #0c5373, rgba(255, 235, 59, 0));
+    border-radius: 4px;
+}
+.show {
+    display: block;
+}
+tr.red-border,
+tr.red-border input,
+tr.red-border p {
+    background-color: rgba(255, 128, 115, 0.8);
+}
+td.red-border-column,
+td.red-border-column input,
+td.red-border-column p {
+    background-color: rgba(255, 128, 115, 0.8);
+}
+td.red-border-square,
+td.red-border-square input,
+td.red-border-square p {
+    background-color: rgba(255, 128, 115, 0.8);
+}
